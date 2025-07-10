@@ -1,1 +1,386 @@
-# poop-on-sol.github.io
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img/logo-poop.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============--> 
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>$POOP Memecoin</title>
+
+    <!--=============== FALLING POOP STYLES ===============-->
+    <style>
+        .poop-fall-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 9999;
+            overflow: hidden;
+        }
+
+        .poop-flake {
+            position: absolute;
+            top: -50px; /* Start above the screen */
+            font-size: 20px;
+            color: #795548;
+            user-select: none;
+            animation: fall linear infinite; 
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(105vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--=============== FALLING POOP CONTAINER ===============-->
+    <div class="poop-fall-container"></div>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="assets/img/logo-poop.png" alt="" class="nav__logo-img">
+                $POOP
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#tokenomics" class="nav__link">Tokenomics</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#howitworks" class="nav__link">How It Works</a>
+                    </li>
+
+                    <a href="https://raydium.io/swap/?outputMint=BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV" class="button button--ghost" target="_blank">Buy Now</a>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img/nav-img.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home container" id="home">
+            <div class="swiper home-swiper">
+                <div class="swiper-wrapper">
+                    <!-- HOME SLIDER 1 -->
+                    <section class="swiper-slide">
+                        <div class="home__content grid">
+                            <div class="home__group">
+                                <img src="assets/img/logo-poop.png" alt="" class="home__img">
+                                <div class="home__indicator"></div>
+
+                                <div class="home__details-img">
+                                    <h4 class="home__details-title">$POOP Coin</h4>
+                                    <span class="home__details-subtitle">The World's Most Honest Token</span>
+                                </div>
+                            </div>
+
+                            <div class="home__data">
+                                <h3 class="home__subtitle">The most honest token</h3>
+                                <h1 class="home__title">GET SOME<br> NEW <br> SHIT</h1>
+                                <p class="home__description">No fake promises, no moonshots. A fresh dose of nonsense, and a reward system that actually moves its ass.
+                                </p>
+
+                                <div class="home__buttons">
+                                    <a href="https://raydium.io/swap/?outputMint=BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV" class="button" target="_blank">Buy $POOP</a>
+                                    <a href="#about" class="button--link button--flex">Learn More <i class='bx bx-right-arrow-alt button__icon'></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        
+        <!--==================== WHY $POOP? ====================-->
+        <section class="section category">
+            <h2 class="section__title">Why $POOP?</h2>
+
+            <div class="category__container container grid">
+                <div class="category__data">
+                    <img src="assets/img/poop.png" alt="" class="category__img">
+                    <h3 class="category__title">Real Revenue-Sharing</h3>
+                    <p class="category__description">Hold $POOP, get paid. Simple as that.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="assets/img/paper.png" alt="" class="category__img">
+                    <h3 class="category__title">Dynamic Rewards</h3>
+                    <p class="category__description">Rewards change every week. Keeps things interesting.</p>
+                </div>
+
+                <div class="category__data">
+                    <img src="assets/img/toilet.png" alt="" class="category__img">
+                    <h3 class="category__title">Meme-Powered</h3>
+                    <p class="category__description">Community-driven and proudly ridiculous.</p>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== ABOUT ====================-->
+        <section class="section about" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">About $POOP</h2>
+                    <p class="about__description">Because in crypto, most tokens are trash. We’re just the first to admit it. $POOP is built for degen humor and passive income lovers. We deliver new sh*t every day.
+                    </p>
+                    <a href="https://raydium.io/swap/?outputMint=BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV" class="button" target="_blank">Get Some Now</a>
+                </div>
+
+                <img src="assets/img/cleanant.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== TOKENOMICS ====================-->
+        <section class="section trick" id="tokenomics">
+            <h2 class="section__title">Tokenomics</h2>
+
+            <div class="trick__container container grid">
+                <div class="trick__content">
+                    <h3 class="trick__title">7% Tax</h3>
+                    <span class="trick__subtitle"></span>
+                </div>
+
+                <div class="trick__content">
+                    <h3 class="trick__title">90% Back to Holders</h3>
+                    <span class="trick__subtitle"></span>
+                </div>
+
+                <div class="trick__content">
+                    <h3 class="trick__title">2% Burn</h3>
+                    <span class="trick__subtitle"></span>
+                </div>
+
+                <div class="trick__content">
+                    <img src="assets/img/price.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Price</h3>
+                    <span class="trick__subtitle" id="token-price">$0.0...</span>
+                </div>
+
+                <div class="trick__content">
+                    <img src="assets/img/liquid.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Liquidity</h3>
+                    <span class="trick__subtitle" id="token-liquidity">Loading...</span>
+                </div>
+
+                <div class="trick__content">
+                    <img src="assets/img/market-cap.png" alt="" class="trick__img">
+                    <h3 class="trick__title">Market Cap</h3>
+                    <span class="trick__subtitle" id="token-market-cap">Loading...</span>
+                </div>
+            </div>
+        </section>
+        
+        <!--==================== HOW IT WORKS ====================-->
+        <section class="section discount" id="howitworks">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title">How Does It Work?</h2>
+                    <p class="discount__description">
+                        Every week, the $POOP ecosystem switches up the reward.
+                        <br><br>
+                        Sometimes it's USDC 💵
+                        <br>
+                        Sometimes it's ETH 🧪
+                        <br>
+                        Sometimes it's just... something weird 👀
+                        <br><br>
+                        You never know exactly what’s coming — but you know you’re getting something. It’s like a crypto vending machine that flushes surprises.
+                    </p>
+                </div>
+
+                <img src="assets/img/WC.png" alt="" class="discount__img">
+            </div>
+        </section>
+
+        <!--==================== CONTRACT ADDRESS ====================-->
+        <section class="section new" id="new">
+            <h2 class="section__title">CA: BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV</h2>
+        </section>
+
+        <!--==================== JOIN THE COMMUNITY ====================-->
+        <section class="section newsletter">
+            <div class="newsletter__container container">
+                <h2 class="section__title">Join the Community</h2>
+                <p class="newsletter__description">
+                    Stay up to date with the latest sh*t.
+                </p>
+
+                <div class="community-buttons" style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://t.me/perfectpooponsol" class="button" target="_blank">Join Telegram</a>
+                    <a href="https://x.com/____nobody____0" class="button" target="_blank">Follow on X</a>
+                    <a href="https://www.instagram.com/poop_the_world_/" class="button" target="_blank">Instagram</a>
+                    <a href="https://www.tiktok.com/@poop_on_sol?_t=ZN-8xvArXX4QZa&_r=1" class="button" target="_blank">TikTok</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo-poop.png" alt="" class="footer__logo-img">
+                        $POOP
+                    </a>
+
+                    <p class="footer__description">Get some new sh*t every day.</p>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">About</h3>
+                    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#about" class="footer__link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#howitworks" class="footer__link">How It Works</a>
+                        </li>
+                        <li>
+                            <a href="#tokenomics" class="footer__link">Tokenomics</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Portfolio</h3>
+                    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#" class="footer__link">Other Projects</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contract</h3>
+                    
+                    <ul class="footer__links">
+                        <li>
+                            <a href="https://solscan.io/token/BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV" target="_blank" class="footer__link" style="word-break: break-all;">BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <span class="footer__copy">© $POOP. All rigths reserved</span>
+
+            <img src="assets/img/poop-footer-1.png" alt="" class="footer__img-one">
+            <img src="assets/img/poop-footer-2.png" alt="" class="footer__img-two">
+        </footer>
+
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+        </a>
+    
+    <!--=============== SCROLL REVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <!--=============== TOKENOMICS SCRIPT ===============-->
+    <script>
+        async function fetchTokenData() {
+            const proxyUrl = 'https://api.allorigins.win/get?url=';
+            const apiUrl = `https://api.dexscreener.com/latest/dex/tokens/BhWQdgq3u8z4JhRGwXttegDum2UZ9WdfXNcmmo2hrREV`;
+            const requestUrl = proxyUrl + encodeURIComponent(apiUrl);
+
+            try {
+                const response = await fetch(requestUrl);
+                const data = await response.json();
+                const dexscreenerData = JSON.parse(data.contents);
+                
+                if (dexscreenerData.pairs && dexscreenerData.pairs.length > 0) {
+                    const pair = dexscreenerData.pairs[0];
+                    const formatNumber = (num) => {
+                        if (num >= 1000000) return `$${(num / 1000000).toFixed(2)}M`;
+                        if (num >= 1000) return `$${(num / 1000).toFixed(1)}K`;
+                        return `$${num.toFixed(2)}`;
+                    };
+                    
+                    document.getElementById('token-price').textContent = `$${parseFloat(pair.priceUsd).toPrecision(4)}`;
+                    document.getElementById('token-liquidity').textContent = formatNumber(pair.liquidity.usd);
+                    document.getElementById('token-market-cap').textContent = formatNumber(pair.fdv);
+                } else {
+                    console.log('No pair data found for this token.');
+                    document.getElementById('token-price').textContent = 'N/A';
+                    document.getElementById('token-liquidity').textContent = 'N/A';
+                    document.getElementById('token-market-cap').textContent = 'N/A';
+                }
+            } catch (error) {
+                console.error('Error fetching token data:', error);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', fetchTokenData);
+    </script>
+
+    <!--=============== FALLING POOP SCRIPT ===============-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.querySelector('.poop-fall-container');
+            const poopCount = 30; // Number of falling poops
+
+            for (let i = 0; i < poopCount; i++) {
+                const poopFlake = document.createElement('div');
+                poopFlake.classList.add('poop-flake');
+                poopFlake.textContent = '💩';
+
+                // Randomize properties for a more natural effect
+                poopFlake.style.left = `${Math.random() * 100}vw`;
+                poopFlake.style.fontSize = `${Math.random() * 20 + 10}px`;
+                poopFlake.style.animationDuration = `${Math.random() * 5 + 5}s`; // Duration between 5s and 10s
+                poopFlake.style.animationDelay = `-${Math.random() * 5}s`; // Start animations at different times
+
+                container.appendChild(poopFlake);
+            }
+        });
+    </script>
+</body>
+</html>
